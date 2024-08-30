@@ -6,3 +6,52 @@
     --soft-orange: #ff9b62;
     --white: #ffffff;
 }
+
+@font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/Barlow-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/Barlow-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/Barlow-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    min-height: 100dvh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    min-height: 100dvh;
+}
+
+ul {
+    list-style: none;
+}
