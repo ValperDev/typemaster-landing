@@ -55,3 +55,34 @@ main {
 ul {
     list-style: none;
 }
+
+.header {
+    padding: 4em;
+}
+
+.nav {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.nav__list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link--cta {
+    background-color: var(--gray);
+    border-radius: 8px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    padding: 1.2em;
+    text-transform: uppercase;
+    transition-property: color, background-color;
+    transition-duration: 150ms;
+}
+
+.nav__link--cta:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
