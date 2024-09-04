@@ -60,7 +60,8 @@ ul {
     padding: 4em;
 }
 
-.nav {
+.nav,
+.specs__content {
     max-width: 1200px;
     margin-inline: auto;
 }
@@ -85,4 +86,36 @@ ul {
 .nav__link--cta:hover {
     background-color: var(--dark-blue);
     color: var(--white);
+}
+
+.specs__list {
+    display: flex;
+    gap: 2em;
+}
+
+.specs__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.specs__icon {
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+}
+
+.specs__title {
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.specs__text {
+    color: var(--dark-gray);
+    line-height: 1.6;
 }
