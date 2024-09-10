@@ -41,6 +41,7 @@ a {
 body {
     font-family: "Barlow", sans-serif;
     min-height: 100dvh;
+    overflow-x: hidden;
 }
 
 img {
@@ -59,12 +60,13 @@ ul {
 .header,
 .specs,
 .footer {
-    padding: 4em;
+    padding: 3em 2em;
 }
 
 .nav,
 .specs__content,
-.footer__content {
+.footer__content,
+.hero__content {
     max-width: 1200px;
     margin-inline: auto;
 }
@@ -75,10 +77,9 @@ ul {
     justify-content: space-between;
 }
 
-.nav__link--cta {
-    background-color: var(--gray);
+.nav__link--cta,
+.hero__link {
     border-radius: 8px;
-    color: var(--dark-blue);
     font-weight: 600;
     padding: 1.2em;
     text-transform: uppercase;
@@ -86,9 +87,78 @@ ul {
     transition-duration: 150ms;
 }
 
+.nav__link--cta {
+    background-color: var(--gray);
+    color: var(--dark-blue);
+}
+
 .nav__link--cta:hover {
     background-color: var(--dark-blue);
     color: var(--white);
+}
+
+.hero {
+    padding: 1.5em 2em;
+}
+
+.hero__content {
+    display: flex;
+    gap: 6em;
+    position: relative;
+}
+
+.hero__content::after {
+    background-image: url("./assets/images/shared/pattern-square.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    transform: translateX(30px);
+    width: 100%;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.hero__title {
+    color: var(--dark-blue);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.hero__description {
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+.hero__cta {
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+.hero__link {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.hero__link:hover {
+    background-color: var(--soft-orange);
+}
+
+.hero__release {
+    color: var(--dark-gray);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero__img {
+    border-radius: 20px;
 }
 
 .specs__list {
